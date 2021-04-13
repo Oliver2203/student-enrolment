@@ -38,26 +38,26 @@ public class ConsoleStudentEnrolment implements StudentEnrolmentManager {
   }
 
   @Override
-  public void deleteByCourseId(int courseId) {
-    studentEnrolments = studentEnrolments.stream().filter(studentEnrolment -> studentEnrolment.getCourse().getId() != courseId).collect(Collectors.toList());
+  public void deleteByCourseId(String courseId) {
+    studentEnrolments = studentEnrolments.stream().filter(studentEnrolment -> !studentEnrolment.getCourse().getId().equalsIgnoreCase(courseId)).collect(Collectors.toList());
   }
 
   @Override
   public StudentEnrolment getOne(int enrolmentId) {
     return studentEnrolments.stream()
-        .filter(enrolment -> enrolment.getId() == enrolmentId)
-        .parallel()
-        .findAny()
-        .orElse(null);
+            .filter(enrolment -> enrolment.getId() == enrolmentId)
+            .parallel()
+            .findAny()
+            .orElse(null);
   }
 
   @Override
-  public StudentEnrolment getOneByStudentAndCourseAndSemester(int studentId, int courseId, String semester) {
+  public StudentEnrolment getOneByStudentAndCourseAndSemester(String studentId, String courseId, String semester) {
     return studentEnrolments.stream()
             .filter(studentEnrolment ->
-                    studentEnrolment.getStudent().getId() == studentId
-                    && studentEnrolment.getSemester().equalsIgnoreCase(semester)
-                    && studentEnrolment.getCourse().getId() == courseId)
+                    studentEnrolment.getStudent().getId().equalsIgnoreCase(studentId)
+                            && studentEnrolment.getSemester().equalsIgnoreCase(semester)
+                            && studentEnrolment.getCourse().getId().equalsIgnoreCase(courseId))
             .parallel()
             .findAny()
             .orElse(null);

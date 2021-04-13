@@ -74,10 +74,10 @@ public class CSVHelper {
                     .withFirstRecordAsHeader()
                     .parse(in);
             for (CSVRecord record : records) {
-                int studentId = Integer.parseInt(record.get(headers[0]));
+                String studentId = (record.get(headers[0]));
                 String studentName = record.get(headers[1]);
                 String birthday = record.get(headers[2]);
-                int courseId = Integer.parseInt(record.get(headers[3]));
+                String courseId = record.get(headers[3]);
                 String courseName = record.get(headers[4]);
                 String creditNumber = record.get(headers[5]);
                 String semester = record.get(headers[6]);

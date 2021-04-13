@@ -1,6 +1,22 @@
 Student Id,Student Name,Birthday,Course Id,Course Name,Credit Number,Semester
-1,Student 1,2020-01-01,1,Course 1,1111-1111-1111-1111,2021A
-1,Student 1,2020-01-01,2,Course 2,2222-2222-2222-2222,2021A
-2,Student 2,2020-02-02,1,Course 1,1111-1111-1111-1111,2021A
-2,Student 2,2020-02-02,2,Course 2,2222-2222-2222-2222,2021A
-2,Student 2,2020-02-02,3,Course 3,333-3333-3333-3333,2021A
+S101312,Alex Mike,1998-10-13,COSC4030,Theory of Computation,5,2020C
+S102732,Mark Duong,2001-08-28,COSC4030,Theory of Computation,5,2020C
+S103723,Hai Hoang Vu,2000-04-25,BUS2232,Business Law,3,2020B
+S103821,Son Minh Doan,1999-11-15,PHYS1230,Introductory Human Physiology,4,2021A
+S101163,Joseph Fergile,1998-10-29,BUS2232,Business Law,3,2020C
+S101153,Jang Min Seon,2000-09-25,COSC3321,Artificial Intelligence,3,2021A
+S103817,Thuy Thu Nguyen,2000-03-04,COSC3321,Artificial Intelligence,3,2021A
+S103912,Son Thanh Le,2001-02-09,BUS2232,Business Law,3,2020C
+S102192,Mark Patterson,2000-06-05,PHYS1230,Introductory Human Physiology,4,2021A
+S103192,Ngan Thu Vo,1998-03-09,BUS2232,Business Law,3,2020B
+S101312,Alex Mike,1998-10-13,PHYS1230,Introductory Human Physiology,4,2021A
+S103817,Thuy Thu Nguyen,2000-03-04,COSC4030,Theory of Computation,5,2020C
+S101163,Joseph Fergile,1998-10-29,COSC3321,Artificial Intelligence,3,2021A
+S102732,Mark Duong,2001-08-28,COSC3321,Artificial Intelligence,3,2021A
+S101312,Alex Mike,1998-10-13,BUS2232,Business Law,3,2020C
+
+
+
+
+
+
